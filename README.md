@@ -5,7 +5,7 @@ of amateur photography" is also a pretty good description.
 
 ## Core functionalities
 
-* Random photos retrieved from Flickr publkic feed.
+* Random photos retrieved from Flickr public feed.
 * Ability to mark/unmark any photo as a favourite one.
 * Favourited photos get remembered, so after page refresh they're displayed.
 
