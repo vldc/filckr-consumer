@@ -1,7 +1,7 @@
 # flickr-consumer
 
 An awesome application for checking on random photos from Flickr. "Current state 
-of amateur photography: is also a pretty good description.
+of amateur photography" is also a pretty good description.
 
 ## Core functionalities
 
@@ -31,7 +31,7 @@ As of 2016-01-31:
 
 ## Build & development
 
-Download the repository, assuming you have Node.js, Grunt and Bower installed, 
+Download the repository. Then, assuming you have Node.js, Grunt and Bower installed, 
 run `npm install` & `bower install`. Shall this fail, there's an already built 
 version of app, residing in `dist` directory.
 
