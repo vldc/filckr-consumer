@@ -1,0 +1,18 @@
+<h1 class="header">The "Random Flickr photos that you may enjoy™" app</h1>
+<p>
+    Tap/select/click on a photo that you want to mark as your favourite. When you
+    refresh the app, all your saved photos will be here. Sweet!
+</p>
+<p ng-hide="main.data.items.length">Loading…</p>
+<ul class="list">
+    <li
+        class="list__item"
+        ng-repeat="item in main.data.items">
+        <img
+            class="list__image"
+            title="{{ item.title }}"
+            ng-src="{{ item.media.m }}"
+            ng-click="item.toggleFavorite()"
+            ng-class="{'list__image--selected': item.isFavorite}" />
+    </li>
+</ul>

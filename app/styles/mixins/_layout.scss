@@ -1,0 +1,42 @@
+$column: 16em;
+
+$oneColumnMax: 2 * $column;
+$twoColumn: $oneColumnMax;
+$twoColumnMax: 4 * $column;
+$fourColumn: $twoColumnMax;
+$fourColumnMax: 8 * $column;
+
+@mixin layout($columns, $only: false) {
+	$mins: (
+		1column: -1,
+		1column2column: -1,
+		2column: $twoColumn,
+		4column: $fourColumn
+	);
+
+	$maxs: (
+		1column: $oneColumnMax,
+		1column2column: $twoColumnMax,
+		2column: $twoColumnMax,
+		4column: $fourColumnMax
+	);
+
+	$min-width: map-get($mins, $columns);
+	$max-width: if($only == true, map-get($maxs, $columns), -1);
+
+	@if ($max-width == -1) {
+    	@media screen and (min-width: $min-width) {
+			@content;
+    	}
+  	}
+  	@else if ($min-width == -1) {
+    	@media screen and (max-width: $max-width) {
+      		@content;
+    	}
+  	}
+  	@else {
+    	@media screen and (min-width: $min-width) and (max-width: $max-width) {
+      		@content;
+    	}
+  	}
+}
