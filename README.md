@@ -1,13 +1,13 @@
 # flickr-consumer
 
-An awesome application for checking on random photos from Flickr. Current state 
-of amateur photography is also a pretty good description.
+An awesome application for checking on random photos from Flickr. "Current state 
+of amateur photography: is also a pretty good description.
 
 ## Core functionalities
 
-* Random photos retireved from Flickr publkic feed.
+* Random photos retrieved from Flickr publkic feed.
 * Ability to mark/unmark any photo as a favourite one.
-* Favourited photos get rememebered so after page refresh they're displayed.
+* Favourited photos get remembered, so after page refresh they're displayed.
 
 ## Browser compatibility
 
@@ -21,6 +21,13 @@ As of 2016-01-31:
 * current version of Android Opera, tested on phone,
 * current version of Android Chrome, tested on phone & tablet,
 * current version of Mobile Safari, tested on iPhone.
+
+## Browser incompatibility
+
+As of 2016-01-31:
+
+* IE 8 and less,
+* JS disabled browsers (e.g. Lynx ;)).
 
 ## Build & development
 
